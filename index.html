@@ -1,0 +1,571 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>戴森球计划 - 材料计算器</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Microsoft YaHei', sans-serif;
+            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
+            min-height: 100vh;
+            padding: 20px;
+            color: #fff;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        h1 {
+            text-align: center;
+            margin-bottom: 30px;
+            color: #e94560;
+            text-shadow: 0 0 10px rgba(233, 69, 96, 0.5);
+        }
+        .search-box {
+            display: flex;
+            gap: 10px;
+            margin-bottom: 20px;
+            align-items: center;
+        }
+        .select-btn {
+            flex: 1;
+            padding: 15px 20px;
+            background: rgba(255, 255, 255, 0.1);
+            border: 2px solid #e94560;
+            border-radius: 8px;
+            color: #fff;
+            font-size: 16px;
+            cursor: pointer;
+            text-align: left;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            transition: all 0.3s;
+        }
+        .select-btn:hover {
+            border-color: #00d9ff;
+            box-shadow: 0 0 10px rgba(0, 217, 255, 0.3);
+        }
+        .select-btn .placeholder {
+            color: rgba(255, 255, 255, 0.5);
+        }
+        .select-btn .selected-item {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        .select-btn img {
+            width: 32px;
+            height: 32px;
+            object-fit: contain;
+        }
+        input[type="number"] {
+            padding: 12px 15px;
+            border: 2px solid #e94560;
+            border-radius: 8px;
+            font-size: 16px;
+            background: rgba(255, 255, 255, 0.1);
+            color: #fff;
+            outline: none;
+            width: 100px;
+        }
+        input[type="number"]:focus {
+            border-color: #00d9ff;
+            box-shadow: 0 0 10px rgba(0, 217, 255, 0.3);
+        }
+        button.calc-btn {
+            padding: 12px 30px;
+            background: linear-gradient(135deg, #e94560, #ff6b6b);
+            border: none;
+            border-radius: 8px;
+            color: #fff;
+            font-size: 16px;
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+        button.calc-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 20px rgba(233, 69, 96, 0.4);
+        }
+        .result-box {
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 12px;
+            padding: 20px;
+            margin-top: 20px;
+        }
+        .target-info {
+            font-size: 18px;
+            margin-bottom: 15px;
+            padding-bottom: 15px;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        .target-info img {
+            width: 40px;
+            height: 40px;
+            object-fit: contain;
+        }
+        .target-info span {
+            color: #00d9ff;
+            font-weight: bold;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 10px;
+        }
+        th, td {
+            padding: 12px 15px;
+            text-align: left;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        th {
+            background: rgba(233, 69, 96, 0.3);
+            color: #fff;
+            font-weight: bold;
+        }
+        tr:hover {
+            background: rgba(255, 255, 255, 0.05);
+        }
+        td:first-child {
+            color: #00d9ff;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        td:first-child img {
+            width: 24px;
+            height: 24px;
+            object-fit: contain;
+        }
+        td:last-child {
+            text-align: right;
+            font-weight: bold;
+            color: #ffd700;
+        }
+        .total-row {
+            background: rgba(0, 217, 255, 0.1);
+            font-weight: bold;
+        }
+        .total-row td {
+            border-bottom: none;
+        }
+        .error {
+            color: #ff6b6b;
+            text-align: center;
+            padding: 20px;
+        }
+        
+        .modal-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.8);
+            display: none;
+            justify-content: center;
+            align-items: center;
+            z-index: 1000;
+        }
+        .modal-overlay.active {
+            display: flex;
+        }
+        .modal {
+            background: #1a1a2e;
+            border-radius: 16px;
+            width: 90%;
+            max-width: 900px;
+            max-height: 85vh;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.5);
+        }
+        .modal-header {
+            padding: 20px;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .modal-header h2 {
+            color: #e94560;
+        }
+        .modal-header input {
+            padding: 10px 15px;
+            border: 2px solid #e94560;
+            border-radius: 8px;
+            font-size: 14px;
+            background: rgba(255, 255, 255, 0.1);
+            color: #fff;
+            outline: none;
+            width: 200px;
+        }
+        .modal-header input:focus {
+            border-color: #00d9ff;
+        }
+        .modal-header input::placeholder {
+            color: rgba(255, 255, 255, 0.5);
+        }
+        .close-btn {
+            background: none;
+            border: none;
+            color: #fff;
+            font-size: 28px;
+            cursor: pointer;
+            padding: 0 10px;
+            opacity: 0.7;
+            transition: opacity 0.3s;
+        }
+        .close-btn:hover {
+            opacity: 1;
+        }
+        .modal-body {
+            padding: 20px;
+            overflow-y: auto;
+            flex: 1;
+        }
+        .category-title {
+            color: #00d9ff;
+            font-size: 14px;
+            margin: 20px 0 10px 0;
+            padding-bottom: 5px;
+            border-bottom: 1px solid rgba(0, 217, 255, 0.3);
+        }
+        .category-title:first-child {
+            margin-top: 0;
+        }
+        .items-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(80px, 1fr));
+            gap: 10px;
+        }
+        .item-card {
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 8px;
+            padding: 10px;
+            text-align: center;
+            cursor: pointer;
+            transition: all 0.3s;
+            border: 2px solid transparent;
+        }
+        .item-card:hover {
+            background: rgba(233, 69, 96, 0.2);
+            border-color: #e94560;
+            transform: translateY(-2px);
+        }
+        .item-card img {
+            width: 48px;
+            height: 48px;
+            object-fit: contain;
+            margin-bottom: 5px;
+        }
+        .item-card .item-name {
+            font-size: 11px;
+            color: rgba(255, 255, 255, 0.8);
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+        }
+        .item-card .item-id {
+            font-size: 10px;
+            color: rgba(255, 255, 255, 0.4);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🚀 戴森球计划 - 材料计算器</h1>
+        
+        <div class="search-box">
+            <button class="select-btn" id="selectBtn" onclick="openModal()">
+                <span class="placeholder">点击选择物品...</span>
+            </button>
+            <input type="number" id="countInput" value="1" min="1" placeholder="数量">
+            <button class="calc-btn" onclick="calculate()">计算</button>
+        </div>
+        
+        <div class="result-box" id="resultBox">
+            <p style="text-align: center; color: rgba(255,255,255,0.5);">请选择物品后点击计算</p>
+        </div>
+    </div>
+
+    <div class="modal-overlay" id="modalOverlay" onclick="closeModalOnOverlay(event)">
+        <div class="modal">
+            <div class="modal-header">
+                <h2>选择物品</h2>
+                <input type="text" id="searchInput" placeholder="搜索物品..." oninput="filterItems()">
+                <button class="close-btn" onclick="closeModal()">&times;</button>
+            </div>
+            <div class="modal-body" id="modalBody">
+            </div>
+        </div>
+    </div>
+
+    <script>
+        let recipes = [];
+        let items = [];
+        let itemMap = {};
+        let recipeMap = {};
+        let itemDataMap = {};
+        let selectedItem = null;
+
+        async function loadData() {
+            try {
+                const [recipesRes, itemsRes] = await Promise.all([
+                    fetch('recipes.json'),
+                    fetch('Items.json')
+                ]);
+                recipes = await recipesRes.json();
+                items = await itemsRes.json();
+                
+                itemMap = {};
+                itemDataMap = {};
+                items.forEach(item => {
+                    itemMap[item.ID] = item.Name;
+                    itemDataMap[item.ID] = item;
+                });
+                
+                recipeMap = {};
+                recipes.forEach(recipe => {
+                    recipe.Results.forEach(resultId => {
+                        if (!recipeMap[resultId]) {
+                            recipeMap[resultId] = recipe;
+                        }
+                    });
+                });
+                
+                renderItems();
+                console.log('数据加载完成');
+            } catch (e) {
+                console.error('数据加载失败:', e);
+            }
+        }
+
+        function getIconUrl(item) {
+            if (item.IconName) {
+                return `icon/Vanilla/${item.IconName}.png`;
+            }
+            return null;
+        }
+
+        function getTypeName(type) {
+            const typeNames = {
+                1: '资源',
+                2: '材料',
+                3: '组件',
+                4: '建筑',
+                5: '科技',
+                6: '燃料',
+                7: '弹药',
+                8: '矩阵',
+                9: '设施',
+                10: '其他',
+                11: '矩阵',
+                12: '建筑',
+                '-1': '特殊'
+            };
+            return typeNames[type] || '其他';
+        }
+
+        function renderItems(filter = '') {
+            const modalBody = document.getElementById('modalBody');
+            const filterLower = filter.toLowerCase();
+            
+            const groupedItems = {};
+            items.forEach(item => {
+                if (filter && !item.Name.toLowerCase().includes(filterLower) && 
+                    !String(item.ID).includes(filter)) {
+                    return;
+                }
+                const typeName = getTypeName(item.Type);
+                if (!groupedItems[typeName]) {
+                    groupedItems[typeName] = [];
+                }
+                groupedItems[typeName].push(item);
+            });
+
+            let html = '';
+            Object.keys(groupedItems).sort().forEach(typeName => {
+                html += `<div class="category-title">${typeName}</div>`;
+                html += '<div class="items-grid">';
+                groupedItems[typeName].forEach(item => {
+                    const iconUrl = getIconUrl(item);
+                    const imgHtml = iconUrl 
+                        ? `<img src="${iconUrl}" alt="${item.Name}" onerror="this.style.display='none'">` 
+                        : '<div style="width:48px;height:48px;"></div>';
+                    html += `
+                        <div class="item-card" onclick="selectItem(${item.ID})">
+                            ${imgHtml}
+                            <div class="item-name" title="${item.Name}">${item.Name}</div>
+                            <div class="item-id">${item.ID}</div>
+                        </div>
+                    `;
+                });
+                html += '</div>';
+            });
+
+            if (Object.keys(groupedItems).length === 0) {
+                html = '<p style="text-align:center;color:rgba(255,255,255,0.5);padding:40px;">未找到匹配的物品</p>';
+            }
+
+            modalBody.innerHTML = html;
+        }
+
+        function filterItems() {
+            const filter = document.getElementById('searchInput').value.trim();
+            renderItems(filter);
+        }
+
+        function openModal() {
+            document.getElementById('modalOverlay').classList.add('active');
+            document.getElementById('searchInput').value = '';
+            document.getElementById('searchInput').focus();
+            renderItems();
+        }
+
+        function closeModal() {
+            document.getElementById('modalOverlay').classList.remove('active');
+        }
+
+        function closeModalOnOverlay(event) {
+            if (event.target === event.currentTarget) {
+                closeModal();
+            }
+        }
+
+        function selectItem(itemId) {
+            selectedItem = itemDataMap[itemId];
+            const selectBtn = document.getElementById('selectBtn');
+            const iconUrl = getIconUrl(selectedItem);
+            const imgHtml = iconUrl 
+                ? `<img src="${iconUrl}" alt="${selectedItem.Name}" onerror="this.style.display='none'">` 
+                : '';
+            selectBtn.innerHTML = `
+                <div class="selected-item">
+                    ${imgHtml}
+                    <span>${selectedItem.Name} (ID: ${selectedItem.ID})</span>
+                </div>
+            `;
+            closeModal();
+        }
+
+        function calcMaterials(targetId, targetCount) {
+            const materials = {};
+            const stack = [[targetId, targetCount, []]];
+            
+            while (stack.length > 0) {
+                const [currentId, count, path] = stack.pop();
+                const currentName = itemMap[currentId] || `ID:${currentId}`;
+                
+                if (path.includes(currentId)) {
+                    materials[currentName] = (materials[currentName] || 0) + count;
+                    continue;
+                }
+                
+                if (!recipeMap[currentId]) {
+                    materials[currentName] = (materials[currentName] || 0) + count;
+                    continue;
+                }
+                
+                const recipe = recipeMap[currentId];
+                
+                if (recipe.Items.length === 0) {
+                    materials[currentName] = (materials[currentName] || 0) + count;
+                    continue;
+                }
+                
+                const resultCount = recipe.ResultCounts[0];
+                const ratio = count / resultCount;
+                const newPath = [...path, currentId];
+                
+                for (let i = 0; i < recipe.Items.length; i++) {
+                    const matId = recipe.Items[i];
+                    const matCount = Math.ceil(recipe.ItemCounts[i] * ratio);
+                    stack.push([matId, matCount, newPath]);
+                }
+            }
+            
+            return materials;
+        }
+
+        function calculate() {
+            const count = parseInt(document.getElementById('countInput').value) || 1;
+            const resultBox = document.getElementById('resultBox');
+            
+            if (!selectedItem) {
+                resultBox.innerHTML = '<p class="error">请先选择物品</p>';
+                return;
+            }
+            
+            const targetId = selectedItem.ID;
+            const targetName = selectedItem.Name;
+            
+            const materials = calcMaterials(targetId, count);
+            
+            if (Object.keys(materials).length === 0) {
+                resultBox.innerHTML = '<p class="error">无法计算该物品的材料需求</p>';
+                return;
+            }
+            
+            const sortedMaterials = Object.entries(materials).sort((a, b) => b[1] - a[1]);
+            const targetIconUrl = getIconUrl(selectedItem);
+            const targetImgHtml = targetIconUrl 
+                ? `<img src="${targetIconUrl}" alt="${targetName}" onerror="this.style.display='none'">` 
+                : '';
+            
+            let html = `
+                <div class="target-info">
+                    ${targetImgHtml}
+                    目标物品: <span>${targetName}</span> (ID: ${targetId}) × ${count}
+                </div>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>材料名称</th>
+                            <th>需求数量</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+            `;
+            
+            sortedMaterials.forEach(([name, qty]) => {
+                const matItem = Object.values(itemDataMap).find(i => i.Name === name);
+                const matIconUrl = matItem ? getIconUrl(matItem) : null;
+                const matImgHtml = matIconUrl 
+                    ? `<img src="${matIconUrl}" alt="${name}" onerror="this.style.display='none'">` 
+                    : '';
+                html += `<tr><td>${matImgHtml}${name}</td><td>${qty}</td></tr>`;
+            });
+            
+            html += `
+                    <tr class="total-row">
+                        <td>总计</td>
+                        <td>${sortedMaterials.length} 种材料</td>
+                    </tr>
+                    </tbody>
+                </table>
+            `;
+            
+            resultBox.innerHTML = html;
+        }
+
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'Escape') {
+                closeModal();
+            }
+        });
+
+        loadData();
+    </script>
+</body>
+</html>

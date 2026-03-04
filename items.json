@@ -1,0 +1,1297 @@
+[
+  {
+    "ID": 1001,
+    "Type": 1,
+    "Name": "铁矿",
+    "GridIndex": 1101,
+    "IconName": "iron-ore"
+  },
+  {
+    "ID": 1002,
+    "Type": 1,
+    "Name": "铜矿",
+    "GridIndex": 1102,
+    "IconName": "copper-ore"
+  },
+  {
+    "ID": 1003,
+    "Type": 1,
+    "Name": "硅石",
+    "GridIndex": 1105,
+    "IconName": "silicium-ore"
+  },
+  {
+    "ID": 1004,
+    "Type": 1,
+    "Name": "钛石",
+    "GridIndex": 1106,
+    "IconName": "titanium-ore"
+  },
+  {
+    "ID": 1005,
+    "Type": 1,
+    "Name": "石矿",
+    "GridIndex": 1103,
+    "IconName": "stone-ore"
+  },
+  {
+    "ID": 1006,
+    "Type": 1,
+    "Name": "煤矿",
+    "GridIndex": 1104,
+    "IconName": "coal-ore"
+  },
+  {
+    "ID": 1030,
+    "Type": 1,
+    "Name": "木材",
+    "GridIndex": 1714,
+    "IconName": "wood"
+  },
+  {
+    "ID": 1031,
+    "Type": 1,
+    "Name": "植物燃料",
+    "GridIndex": 1814,
+    "IconName": "plant-fuel"
+  },
+  {
+    "ID": 1011,
+    "Type": 1,
+    "Name": "可燃冰",
+    "GridIndex": 1614,
+    "IconName": "gas-hydrate"
+  },
+  {
+    "ID": 1012,
+    "Type": 1,
+    "Name": "金伯利矿石",
+    "GridIndex": 1114,
+    "IconName": "diamond-ore"
+  },
+  {
+    "ID": 1013,
+    "Type": 1,
+    "Name": "分形硅石",
+    "GridIndex": 1214,
+    "IconName": "fractal-silica"
+  },
+  {
+    "ID": 1014,
+    "Type": 1,
+    "Name": "光栅石",
+    "GridIndex": 1314,
+    "IconName": "grating-ore"
+  },
+  {
+    "ID": 1015,
+    "Type": 1,
+    "Name": "刺笋结晶",
+    "GridIndex": 1414,
+    "IconName": "bamboo-crystal"
+  },
+  {
+    "ID": 1016,
+    "Type": 1,
+    "Name": "单极磁石",
+    "GridIndex": 1514,
+    "IconName": "mono-mag-ore"
+  },
+  {
+    "ID": 1101,
+    "Type": 2,
+    "Name": "铁块",
+    "GridIndex": 1201,
+    "IconName": "iron-plate"
+  },
+  {
+    "ID": 1104,
+    "Type": 2,
+    "Name": "铜块",
+    "GridIndex": 1202,
+    "IconName": "copper-plate"
+  },
+  {
+    "ID": 1105,
+    "Type": 2,
+    "Name": "高纯硅块",
+    "GridIndex": 1205,
+    "IconName": "silicium-single-crystal"
+  },
+  {
+    "ID": 1106,
+    "Type": 2,
+    "Name": "钛块",
+    "GridIndex": 1206,
+    "IconName": "titanium-plate"
+  },
+  {
+    "ID": 1108,
+    "Type": 2,
+    "Name": "石材",
+    "GridIndex": 1203,
+    "IconName": "stone-brick"
+  },
+  {
+    "ID": 1109,
+    "Type": 2,
+    "Name": "高能石墨",
+    "GridIndex": 1204,
+    "IconName": "graphite"
+  },
+  {
+    "ID": 1103,
+    "Type": 2,
+    "Name": "钢材",
+    "GridIndex": 1401,
+    "IconName": "steel-plate"
+  },
+  {
+    "ID": 1107,
+    "Type": 2,
+    "Name": "钛合金",
+    "GridIndex": 1306,
+    "IconName": "titanium-alloy"
+  },
+  {
+    "ID": 1110,
+    "Type": 2,
+    "Name": "玻璃",
+    "GridIndex": 1303,
+    "IconName": "glass"
+  },
+  {
+    "ID": 1119,
+    "Type": 2,
+    "Name": "钛化玻璃",
+    "GridIndex": 1509,
+    "IconName": "titan-glass"
+  },
+  {
+    "ID": 1111,
+    "Type": 2,
+    "Name": "棱镜",
+    "GridIndex": 1403,
+    "IconName": "prism"
+  },
+  {
+    "ID": 1112,
+    "Type": 2,
+    "Name": "金刚石",
+    "GridIndex": 1304,
+    "IconName": "diamond"
+  },
+  {
+    "ID": 1113,
+    "Type": 2,
+    "Name": "晶格硅",
+    "GridIndex": 1305,
+    "IconName": "silicium-high-purity"
+  },
+  {
+    "ID": 1201,
+    "Type": 3,
+    "Name": "齿轮",
+    "GridIndex": 1501,
+    "IconName": "gear-wheel"
+  },
+  {
+    "ID": 1102,
+    "Type": 2,
+    "Name": "磁铁",
+    "GridIndex": 1301,
+    "IconName": "magnet"
+  },
+  {
+    "ID": 1202,
+    "Type": 3,
+    "Name": "磁线圈",
+    "GridIndex": 1302,
+    "IconName": "magnetism-wire"
+  },
+  {
+    "ID": 1203,
+    "Type": 3,
+    "Name": "电动机",
+    "GridIndex": 1404,
+    "IconName": "electric-motor"
+  },
+  {
+    "ID": 1204,
+    "Type": 3,
+    "Name": "电磁涡轮",
+    "GridIndex": 1504,
+    "IconName": "mag-turbine"
+  },
+  {
+    "ID": 1205,
+    "Type": 3,
+    "Name": "超级磁场环",
+    "GridIndex": 1604,
+    "IconName": "hyper-magnetism-ring"
+  },
+  {
+    "ID": 1206,
+    "Type": 3,
+    "Name": "粒子容器",
+    "GridIndex": 1605,
+    "IconName": "partical-capacitor"
+  },
+  {
+    "ID": 1127,
+    "Type": 2,
+    "Name": "奇异物质",
+    "GridIndex": 1408,
+    "IconName": "strange-matter-generator"
+  },
+  {
+    "ID": 1301,
+    "Type": 3,
+    "Name": "电路板",
+    "GridIndex": 1402,
+    "IconName": "circuit-board"
+  },
+  {
+    "ID": 1303,
+    "Type": 3,
+    "Name": "处理器",
+    "GridIndex": 1505,
+    "IconName": "processor"
+  },
+  {
+    "ID": 1305,
+    "Type": 3,
+    "Name": "量子芯片",
+    "GridIndex": 1511,
+    "IconName": "quantum-processor"
+  },
+  {
+    "ID": 1302,
+    "Type": 3,
+    "Name": "微晶元件",
+    "GridIndex": 1405,
+    "IconName": "micro-component"
+  },
+  {
+    "ID": 1304,
+    "Type": 3,
+    "Name": "位面过滤器",
+    "GridIndex": 1510,
+    "IconName": "plane-filter"
+  },
+  {
+    "ID": 1402,
+    "Type": 3,
+    "Name": "粒子宽带",
+    "GridIndex": 1411,
+    "IconName": "particle-wide-band"
+  },
+  {
+    "ID": 1401,
+    "Type": 3,
+    "Name": "电浆激发器",
+    "GridIndex": 1502,
+    "IconName": "plasma-generator"
+  },
+  {
+    "ID": 1404,
+    "Type": 3,
+    "Name": "光子合并器",
+    "GridIndex": 1503,
+    "IconName": "photo-shifter"
+  },
+  {
+    "ID": 1501,
+    "Type": 4,
+    "Name": "太阳帆",
+    "GridIndex": 1708,
+    "IconName": "solar-collector"
+  },
+  {
+    "ID": 1000,
+    "Type": 1,
+    "Name": "水",
+    "GridIndex": 1107,
+    "IconName": "water"
+  },
+  {
+    "ID": 1007,
+    "Type": 1,
+    "Name": "原油",
+    "GridIndex": 1108,
+    "IconName": "oil"
+  },
+  {
+    "ID": 1114,
+    "Type": 2,
+    "Name": "精炼油",
+    "GridIndex": 1208,
+    "IconName": "refined-oil"
+  },
+  {
+    "ID": 1116,
+    "Type": 2,
+    "Name": "硫酸",
+    "GridIndex": 1207,
+    "IconName": "sulphuric-acid"
+  },
+  {
+    "ID": 1120,
+    "Type": 2,
+    "Name": "氢",
+    "GridIndex": 1109,
+    "IconName": "hydrogen"
+  },
+  {
+    "ID": 1121,
+    "Type": 2,
+    "Name": "重氢",
+    "GridIndex": 1110,
+    "IconName": "deuterium"
+  },
+  {
+    "ID": 1122,
+    "Type": 2,
+    "Name": "反物质",
+    "GridIndex": 1111,
+    "IconName": "anti-matter"
+  },
+  {
+    "ID": 1208,
+    "Type": 2,
+    "Name": "临界光子",
+    "GridIndex": 1113,
+    "IconName": "photon-capacitor-full"
+  },
+  {
+    "ID": 1801,
+    "Type": 4,
+    "Name": "液氢燃料棒",
+    "GridIndex": 1209,
+    "IconName": "hydrogen-energy-fuel"
+  },
+  {
+    "ID": 1802,
+    "Type": 4,
+    "Name": "氘核燃料棒",
+    "GridIndex": 1210,
+    "IconName": "deuterium-energy-fuel"
+  },
+  {
+    "ID": 1803,
+    "Type": 4,
+    "Name": "反物质燃料棒",
+    "GridIndex": 1211,
+    "IconName": "antimatter-energy-fuel"
+  },
+  {
+    "ID": 1804,
+    "Type": 4,
+    "Name": "奇异湮灭燃料棒",
+    "GridIndex": 1212,
+    "IconName": "virtual-energy-fuel"
+  },
+  {
+    "ID": 1115,
+    "Type": 2,
+    "Name": "塑料",
+    "GridIndex": 1308,
+    "IconName": "plastic"
+  },
+  {
+    "ID": 1123,
+    "Type": 2,
+    "Name": "石墨烯",
+    "GridIndex": 1310,
+    "IconName": "graphene"
+  },
+  {
+    "ID": 1124,
+    "Type": 2,
+    "Name": "碳纳米管",
+    "GridIndex": 1410,
+    "IconName": "nanotube"
+  },
+  {
+    "ID": 1117,
+    "Type": 2,
+    "Name": "有机晶体",
+    "GridIndex": 1309,
+    "IconName": "crystal-rubber"
+  },
+  {
+    "ID": 1118,
+    "Type": 2,
+    "Name": "钛晶石",
+    "GridIndex": 1409,
+    "IconName": "titan-crystal"
+  },
+  {
+    "ID": 1126,
+    "Type": 2,
+    "Name": "卡西米尔晶体",
+    "GridIndex": 1508,
+    "IconName": "casimir-crystal"
+  },
+  {
+    "ID": 1128,
+    "Type": 3,
+    "Name": "燃烧单元",
+    "GridIndex": 1307,
+    "IconName": "explosive"
+  },
+  {
+    "ID": 1129,
+    "Type": 3,
+    "Name": "爆破单元",
+    "GridIndex": 1407,
+    "IconName": "high-explosive"
+  },
+  {
+    "ID": 1130,
+    "Type": 3,
+    "Name": "晶石爆破单元",
+    "GridIndex": 1507,
+    "IconName": "particle-explosive"
+  },
+  {
+    "ID": 1209,
+    "Type": 3,
+    "Name": "引力透镜",
+    "GridIndex": 1705,
+    "IconName": "gravity-lens"
+  },
+  {
+    "ID": 1210,
+    "Type": 3,
+    "Name": "空间翘曲器",
+    "GridIndex": 1704,
+    "IconName": "space-warper"
+  },
+  {
+    "ID": 1403,
+    "Type": 3,
+    "Name": "湮灭约束球",
+    "GridIndex": 1311,
+    "IconName": "fusion-capacitor"
+  },
+  {
+    "ID": 1407,
+    "Type": 3,
+    "Name": "动力引擎",
+    "GridIndex": 1601,
+    "IconName": "engine"
+  },
+  {
+    "ID": 1405,
+    "Type": 3,
+    "Name": "推进器",
+    "GridIndex": 1602,
+    "IconName": "fuel-thruster"
+  },
+  {
+    "ID": 1406,
+    "Type": 3,
+    "Name": "加力推进器",
+    "GridIndex": 1603,
+    "IconName": "ion-thruster"
+  },
+  {
+    "ID": 5003,
+    "Type": 5,
+    "Name": "配送运输机",
+    "GridIndex": 1701,
+    "IconName": "delivery-drone"
+  },
+  {
+    "ID": 5001,
+    "Type": 5,
+    "Name": "物流运输机",
+    "GridIndex": 1702,
+    "IconName": "logistic-drone"
+  },
+  {
+    "ID": 5002,
+    "Type": 5,
+    "Name": "星际物流运输船",
+    "GridIndex": 1703,
+    "IconName": "logistic-vessel"
+  },
+  {
+    "ID": 1125,
+    "Type": 2,
+    "Name": "框架材料",
+    "GridIndex": 1709,
+    "IconName": "frame-material"
+  },
+  {
+    "ID": 1502,
+    "Type": 3,
+    "Name": "戴森球组件",
+    "GridIndex": 1710,
+    "IconName": "dyson-sphere-component"
+  },
+  {
+    "ID": 1503,
+    "Type": 4,
+    "Name": "小型运载火箭",
+    "GridIndex": 1711,
+    "IconName": "rocket"
+  },
+  {
+    "ID": 1131,
+    "Type": 3,
+    "Name": "地基",
+    "GridIndex": 1706,
+    "IconName": "terrain-tool"
+  },
+  {
+    "ID": 1141,
+    "Type": 2,
+    "Name": "增产剂 Mk.I",
+    "GridIndex": 1406,
+    "IconName": "accelerator-1"
+  },
+  {
+    "ID": 1142,
+    "Type": 2,
+    "Name": "增产剂 Mk.II",
+    "GridIndex": 1506,
+    "IconName": "accelerator-2"
+  },
+  {
+    "ID": 1143,
+    "Type": 2,
+    "Name": "增产剂 Mk.III",
+    "GridIndex": 1606,
+    "IconName": "accelerator-3"
+  },
+  {
+    "ID": 1601,
+    "Type": 4,
+    "Name": "机枪弹箱",
+    "GridIndex": 1312,
+    "IconName": "bullet"
+  },
+  {
+    "ID": 1602,
+    "Type": 4,
+    "Name": "钛化弹箱",
+    "GridIndex": 1412,
+    "IconName": "bullet-titanium"
+  },
+  {
+    "ID": 1603,
+    "Type": 4,
+    "Name": "超合金弹箱",
+    "GridIndex": 1512,
+    "IconName": "bullet-alloy"
+  },
+  {
+    "ID": 1604,
+    "Type": 4,
+    "Name": "炮弹组",
+    "GridIndex": 1513,
+    "IconName": "cannonball"
+  },
+  {
+    "ID": 1605,
+    "Type": 4,
+    "Name": "高爆炮弹组",
+    "GridIndex": 1613,
+    "IconName": "cannonball-cluster"
+  },
+  {
+    "ID": 1606,
+    "Type": 4,
+    "Name": "晶石炮弹组",
+    "GridIndex": 1713,
+    "IconName": "cannonball-alloy"
+  },
+  {
+    "ID": 1607,
+    "Type": 4,
+    "Name": "等离子胶囊",
+    "GridIndex": 1612,
+    "IconName": "capsule-energy"
+  },
+  {
+    "ID": 1608,
+    "Type": 4,
+    "Name": "反物质胶囊",
+    "GridIndex": 1712,
+    "IconName": "capsule-antimatter"
+  },
+  {
+    "ID": 1609,
+    "Type": 4,
+    "Name": "导弹组",
+    "GridIndex": 1213,
+    "IconName": "missile"
+  },
+  {
+    "ID": 1610,
+    "Type": 4,
+    "Name": "超音速导弹组",
+    "GridIndex": 1313,
+    "IconName": "missile-supersonic"
+  },
+  {
+    "ID": 1611,
+    "Type": 4,
+    "Name": "引力导弹组",
+    "GridIndex": 1413,
+    "IconName": "missile-graviton"
+  },
+  {
+    "ID": 1612,
+    "Type": 4,
+    "Name": "干扰胶囊",
+    "GridIndex": 1812,
+    "IconName": "em-disturb"
+  },
+  {
+    "ID": 1613,
+    "Type": 4,
+    "Name": "压制胶囊",
+    "GridIndex": 1813,
+    "IconName": "em-suppress"
+  },
+  {
+    "ID": 5101,
+    "Type": 4,
+    "Name": "原型机",
+    "GridIndex": 1607,
+    "IconName": "fighter-shield"
+  },
+  {
+    "ID": 5102,
+    "Type": 4,
+    "Name": "精准无人机",
+    "GridIndex": 1608,
+    "IconName": "fighter-plasma"
+  },
+  {
+    "ID": 5103,
+    "Type": 4,
+    "Name": "攻击无人机",
+    "GridIndex": 1609,
+    "IconName": "fighter-laser"
+  },
+  {
+    "ID": 5111,
+    "Type": 4,
+    "Name": "护卫舰",
+    "GridIndex": 1610,
+    "IconName": "warship-plasma"
+  },
+  {
+    "ID": 5112,
+    "Type": 4,
+    "Name": "驱逐舰",
+    "GridIndex": 1611,
+    "IconName": "warship-laser"
+  },
+  {
+    "ID": 5201,
+    "Type": 10,
+    "Name": "黑雾矩阵",
+    "GridIndex": 1807,
+    "IconName": "memory"
+  },
+  {
+    "ID": 5202,
+    "Type": 10,
+    "Name": "硅基神经元",
+    "GridIndex": 1809,
+    "IconName": "silicon-neuron"
+  },
+  {
+    "ID": 5203,
+    "Type": 10,
+    "Name": "物质重组器",
+    "GridIndex": 1811,
+    "IconName": "reassembler"
+  },
+  {
+    "ID": 5204,
+    "Type": 10,
+    "Name": "负熵奇点",
+    "GridIndex": 1810,
+    "IconName": "negentropy"
+  },
+  {
+    "ID": 5205,
+    "Type": 10,
+    "Name": "核心素",
+    "GridIndex": 1112,
+    "IconName": "virtual-particle"
+  },
+  {
+    "ID": 5206,
+    "Type": 10,
+    "Name": "能量碎片",
+    "GridIndex": 1808,
+    "IconName": "energy-fragment"
+  },
+  {
+    "ID": 2001,
+    "Type": 5,
+    "Name": "传送带",
+    "GridIndex": 2201,
+    "IconName": "belt-1"
+  },
+  {
+    "ID": 2002,
+    "Type": 5,
+    "Name": "高速传送带",
+    "GridIndex": 2202,
+    "IconName": "belt-2"
+  },
+  {
+    "ID": 2003,
+    "Type": 5,
+    "Name": "极速传送带",
+    "GridIndex": 2203,
+    "IconName": "belt-3"
+  },
+  {
+    "ID": 2011,
+    "Type": 5,
+    "Name": "分拣器",
+    "GridIndex": 2301,
+    "IconName": "inserter-1"
+  },
+  {
+    "ID": 2012,
+    "Type": 5,
+    "Name": "高速分拣器",
+    "GridIndex": 2302,
+    "IconName": "inserter-2"
+  },
+  {
+    "ID": 2013,
+    "Type": 5,
+    "Name": "极速分拣器",
+    "GridIndex": 2303,
+    "IconName": "inserter-3"
+  },
+  {
+    "ID": 2014,
+    "Type": 5,
+    "Name": "集装分拣器",
+    "GridIndex": 2304,
+    "IconName": "inserter-4"
+  },
+  {
+    "ID": 2020,
+    "Type": 5,
+    "Name": "四向分流器",
+    "GridIndex": 2204,
+    "IconName": "splitter-4dir"
+  },
+  {
+    "ID": 2040,
+    "Type": 5,
+    "Name": "自动集装机",
+    "GridIndex": 2205,
+    "IconName": "piler"
+  },
+  {
+    "ID": 2030,
+    "Type": 5,
+    "Name": "流速监测器",
+    "GridIndex": 2206,
+    "IconName": "monitor"
+  },
+  {
+    "ID": 2313,
+    "Type": 6,
+    "Name": "喷涂机",
+    "GridIndex": 2207,
+    "IconName": "spray-coater"
+  },
+  {
+    "ID": 2107,
+    "Type": 5,
+    "Name": "物流配送器",
+    "GridIndex": 2211,
+    "IconName": "delivery-machine"
+  },
+  {
+    "ID": 2101,
+    "Type": 5,
+    "Name": "小型储物仓",
+    "GridIndex": 2208,
+    "IconName": "storage-1"
+  },
+  {
+    "ID": 2102,
+    "Type": 5,
+    "Name": "大型储物仓",
+    "GridIndex": 2209,
+    "IconName": "storage-2"
+  },
+  {
+    "ID": 2106,
+    "Type": 5,
+    "Name": "储液罐",
+    "GridIndex": 2210,
+    "IconName": "storage-tank"
+  },
+  {
+    "ID": 2303,
+    "Type": 6,
+    "Name": "制造台 Mk.I",
+    "GridIndex": 2404,
+    "IconName": "assembler-1",
+    "WorkEnergyPerTick": 4500,
+    "Speed": 0.75,
+    "Space": 10.24
+  },
+  {
+    "ID": 2304,
+    "Type": 6,
+    "Name": "制造台 Mk.II",
+    "GridIndex": 2405,
+    "IconName": "assembler-2",
+    "WorkEnergyPerTick": 9000,
+    "Speed": 1.0,
+    "Space": 10.24
+  },
+  {
+    "ID": 2305,
+    "Type": 6,
+    "Name": "制造台 Mk.III",
+    "GridIndex": 2406,
+    "IconName": "assembler-3",
+    "WorkEnergyPerTick": 18000,
+    "Speed": 1.5,
+    "Space": 10.24
+  },
+  {
+    "ID": 2318,
+    "Type": 6,
+    "Name": "重组式制造台",
+    "GridIndex": 2407,
+    "IconName": "assembler-4",
+    "WorkEnergyPerTick": 45000,
+    "Speed": 3.0,
+    "Space": 10.24
+  },
+  {
+    "ID": 2201,
+    "Type": 5,
+    "Name": "电力感应塔",
+    "GridIndex": 2101,
+    "IconName": "tesla-coil"
+  },
+  {
+    "ID": 2202,
+    "Type": 5,
+    "Name": "无线输电塔",
+    "GridIndex": 2102,
+    "IconName": "charging-pole"
+  },
+  {
+    "ID": 2212,
+    "Type": 5,
+    "Name": "卫星配电站",
+    "GridIndex": 2103,
+    "IconName": "orbital-substation"
+  },
+  {
+    "ID": 2203,
+    "Type": 6,
+    "Name": "风力涡轮机",
+    "GridIndex": 2104,
+    "IconName": "wind-turbine"
+  },
+  {
+    "ID": 2204,
+    "Type": 6,
+    "Name": "火力发电厂",
+    "GridIndex": 2105,
+    "IconName": "fuel-plant"
+  },
+  {
+    "ID": 2211,
+    "Type": 6,
+    "Name": "微型聚变发电站",
+    "GridIndex": 2108,
+    "IconName": "fusion-power-station"
+  },
+  {
+    "ID": 2213,
+    "Type": 6,
+    "Name": "地热发电站",
+    "GridIndex": 2107,
+    "IconName": "geothermal-power-station"
+  },
+  {
+    "ID": 2301,
+    "Type": 6,
+    "Name": "采矿机",
+    "GridIndex": 2305,
+    "IconName": "mining-drill",
+    "WorkEnergyPerTick": 7000,
+    "Speed": 0.5,
+    "Space": 15.0
+  },
+  {
+    "ID": 2316,
+    "Type": 6,
+    "Name": "大型采矿机",
+    "GridIndex": 2306,
+    "IconName": "mining-drill-mk2",
+    "WorkEnergyPerTick": 49000,
+    "Speed": 1.0,
+    "Space": 25.0
+  },
+  {
+    "ID": 2306,
+    "Type": 6,
+    "Name": "抽水站",
+    "GridIndex": 2307,
+    "IconName": "water-pump",
+    "WorkEnergyPerTick": 5000,
+    "Speed": 0.8333333333333334,
+    "Space": 12.0
+  },
+  {
+    "ID": 2302,
+    "Type": 6,
+    "Name": "电弧熔炉",
+    "GridIndex": 2401,
+    "IconName": "smelter",
+    "WorkEnergyPerTick": 6000,
+    "Speed": 1.0,
+    "Space": 5.76
+  },
+  {
+    "ID": 2315,
+    "Type": 6,
+    "Name": "位面熔炉",
+    "GridIndex": 2402,
+    "IconName": "smelter-2",
+    "WorkEnergyPerTick": 24000,
+    "Speed": 2.0,
+    "Space": 5.76
+  },
+  {
+    "ID": 2319,
+    "Type": 6,
+    "Name": "负熵熔炉",
+    "GridIndex": 2403,
+    "IconName": "smelter-3",
+    "WorkEnergyPerTick": 48000,
+    "Speed": 3.0,
+    "Space": 5.76
+  },
+  {
+    "ID": 2307,
+    "Type": 6,
+    "Name": "原油萃取站",
+    "GridIndex": 2308,
+    "IconName": "oil-extractor",
+    "WorkEnergyPerTick": 14000,
+    "Speed": 1.0,
+    "Space": 50.0
+  },
+  {
+    "ID": 2308,
+    "Type": 6,
+    "Name": "原油精炼厂",
+    "GridIndex": 2309,
+    "IconName": "oil-refinery",
+    "WorkEnergyPerTick": 16000,
+    "Speed": 1.0,
+    "Space": 18.0
+  },
+  {
+    "ID": 2309,
+    "Type": 6,
+    "Name": "化工厂",
+    "GridIndex": 2311,
+    "IconName": "chemical-plant",
+    "WorkEnergyPerTick": 12000,
+    "Speed": 1.0,
+    "Space": 23.76
+  },
+  {
+    "ID": 2317,
+    "Type": 6,
+    "Name": "量子化工厂",
+    "GridIndex": 2312,
+    "IconName": "chemical-plant-2",
+    "WorkEnergyPerTick": 36000,
+    "Speed": 2.0,
+    "Space": 23.76
+  },
+  {
+    "ID": 2314,
+    "Type": 6,
+    "Name": "分馏塔",
+    "GridIndex": 2310,
+    "IconName": "fractionator",
+    "WorkEnergyPerTick": 12000,
+    "Speed": 1.0,
+    "Space": 12.96
+  },
+  {
+    "ID": 2205,
+    "Type": 6,
+    "Name": "太阳能板",
+    "GridIndex": 2106,
+    "IconName": "solar-panel"
+  },
+  {
+    "ID": 2206,
+    "Type": 5,
+    "Name": "蓄电器",
+    "GridIndex": 2110,
+    "IconName": "accumulator",
+    "WorkEnergyPerTick": 0,
+    "Speed": 1.0,
+    "Space": 4.0
+  },
+  {
+    "ID": 2207,
+    "Type": 5,
+    "Name": "蓄电器（满）",
+    "GridIndex": 2111,
+    "IconName": "accumulator-full",
+    "WorkEnergyPerTick": 0,
+    "Speed": 1.0,
+    "Space": 4.0
+  },
+  {
+    "ID": 2311,
+    "Type": 6,
+    "Name": "电磁轨道弹射器",
+    "GridIndex": 2410,
+    "IconName": "em-rail-ejector"
+  },
+  {
+    "ID": 2208,
+    "Type": 6,
+    "Name": "射线接收站",
+    "GridIndex": 2112,
+    "IconName": "ray-receiver",
+    "WorkEnergyPerTick": 0,
+    "Speed": 1.0,
+    "Space": 54.82
+  },
+  {
+    "ID": 2312,
+    "Type": 6,
+    "Name": "垂直发射井",
+    "GridIndex": 2411,
+    "IconName": "vertical-launching-silo"
+  },
+  {
+    "ID": 2209,
+    "Type": 5,
+    "Name": "能量枢纽",
+    "GridIndex": 2109,
+    "IconName": "energy-exchanger",
+    "WorkEnergyPerTick": 0,
+    "Speed": 1.0,
+    "Space": 64.0
+  },
+  {
+    "ID": 2310,
+    "Type": 6,
+    "Name": "微型粒子对撞机",
+    "GridIndex": 2313,
+    "IconName": "hadron-collider",
+    "WorkEnergyPerTick": 200000,
+    "Speed": 1.0,
+    "Space": 45.12
+  },
+  {
+    "ID": 2210,
+    "Type": 6,
+    "Name": "人造恒星",
+    "GridIndex": 2113,
+    "IconName": "fusion-reactor"
+  },
+  {
+    "ID": 2103,
+    "Type": 5,
+    "Name": "行星内物流运输站",
+    "GridIndex": 2212,
+    "IconName": "logistic-station"
+  },
+  {
+    "ID": 2104,
+    "Type": 5,
+    "Name": "星际物流运输站",
+    "GridIndex": 2213,
+    "IconName": "interstellar-logistic-station"
+  },
+  {
+    "ID": 2105,
+    "Type": 5,
+    "Name": "轨道采集器",
+    "GridIndex": 2214,
+    "IconName": "orbital-collector",
+    "WorkEnergyPerTick": 500000,
+    "Speed": 8.0,
+    "Space": 0.0
+  },
+  {
+    "ID": 2901,
+    "Type": 6,
+    "Name": "矩阵研究站",
+    "GridIndex": 2408,
+    "IconName": "lab",
+    "WorkEnergyPerTick": 8000,
+    "Speed": 1.0,
+    "Space": 20.25
+  },
+  {
+    "ID": 2902,
+    "Type": 6,
+    "Name": "自演化研究站",
+    "GridIndex": 2409,
+    "IconName": "lab-2",
+    "WorkEnergyPerTick": 32000,
+    "Speed": 3.0,
+    "Space": 20.25
+  },
+  {
+    "ID": 3001,
+    "Type": 8,
+    "Name": "高斯机枪塔",
+    "GridIndex": 2501,
+    "IconName": "turret-gauss"
+  },
+  {
+    "ID": 3002,
+    "Type": 8,
+    "Name": "高频激光塔",
+    "GridIndex": 2504,
+    "IconName": "turret-laser"
+  },
+  {
+    "ID": 3003,
+    "Type": 8,
+    "Name": "聚爆加农炮",
+    "GridIndex": 2503,
+    "IconName": "turret-cannon"
+  },
+  {
+    "ID": 3004,
+    "Type": 8,
+    "Name": "磁化电浆炮",
+    "GridIndex": 2505,
+    "IconName": "turret-plasma"
+  },
+  {
+    "ID": 3005,
+    "Type": 8,
+    "Name": "导弹防御塔",
+    "GridIndex": 2502,
+    "IconName": "turret-missile"
+  },
+  {
+    "ID": 3006,
+    "Type": 8,
+    "Name": "干扰塔",
+    "GridIndex": 2508,
+    "IconName": "turret-disturb"
+  },
+  {
+    "ID": 3007,
+    "Type": 9,
+    "Name": "信号塔",
+    "GridIndex": 2509,
+    "IconName": "turret-signal"
+  },
+  {
+    "ID": 3008,
+    "Type": 9,
+    "Name": "行星护盾发生器",
+    "GridIndex": 2510,
+    "IconName": "turret-shield"
+  },
+  {
+    "ID": 3009,
+    "Type": 9,
+    "Name": "战场分析基站",
+    "GridIndex": 2507,
+    "IconName": "battle-base"
+  },
+  {
+    "ID": 3010,
+    "Type": 8,
+    "Name": "近程电浆塔",
+    "GridIndex": 2506,
+    "IconName": "turret-plasma-ground"
+  },
+  {
+    "ID": 6001,
+    "Type": 11,
+    "Name": "电磁矩阵",
+    "GridIndex": 1801,
+    "IconName": "t-matrix"
+  },
+  {
+    "ID": 6002,
+    "Type": 11,
+    "Name": "能量矩阵",
+    "GridIndex": 1802,
+    "IconName": "e-matrix"
+  },
+  {
+    "ID": 6003,
+    "Type": 11,
+    "Name": "结构矩阵",
+    "GridIndex": 1803,
+    "IconName": "c-matrix"
+  },
+  {
+    "ID": 6004,
+    "Type": 11,
+    "Name": "信息矩阵",
+    "GridIndex": 1804,
+    "IconName": "i-matrix"
+  },
+  {
+    "ID": 6005,
+    "Type": 11,
+    "Name": "引力矩阵",
+    "GridIndex": 1805,
+    "IconName": "g-matrix"
+  },
+  {
+    "ID": 6006,
+    "Type": 11,
+    "Name": "宇宙矩阵",
+    "GridIndex": 1806,
+    "IconName": "u-matrix"
+  },
+  {
+    "ID": 0,
+    "Type": -1,
+    "Name": "伊卡洛斯",
+    "GridIndex": -1,
+    "IconName": "伊卡洛斯",
+    "WorkEnergyPerTick": 1333.3333333333333,
+    "Speed": 10000.0,
+    "MultipleOutput": 1,
+    "Space": 0
+  },
+  {
+    "ID": 1,
+    "Type": -1,
+    "Name": "行星基地",
+    "GridIndex": -1,
+    "IconName": "行星基地",
+    "WorkEnergyPerTick": 0.0,
+    "Speed": 10000.0,
+    "MultipleOutput": 1,
+    "Space": 0
+  }
+]
