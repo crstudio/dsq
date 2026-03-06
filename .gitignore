@@ -1,17 +1,24 @@
-/formulas.txt
-/formulas_type_-1.txt
-/formulas_type_1.txt
-/formulas_type_15.txt
-/formulas_type_2.txt
-/formulas_type_3.txt
-/formulas_type_4.txt
-/formulas_type_5.txt
-/formulas_type_8.txt
-/recipes_type_-1.json
-/recipes_type_1.json
-/recipes_type_15.json
-/recipes_type_2.json
-/recipes_type_3.json
-/recipes_type_4.json
-/recipes_type_5.json
-/recipes_type_8.json
+node_modules
+.history
+
+# Output
+.output
+.vercel
+.netlify
+.wrangler
+/.svelte-kit
+/build
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Env
+.env
+.env.*
+!.env.example
+!.env.test
+
+# Vite
+vite.config.js.timestamp-*
+vite.config.ts.timestamp-*
